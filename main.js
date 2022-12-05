@@ -4,14 +4,12 @@ const REDIRECT_URI = 'https://burach0k.github.io/test_im_257'
 fetch("https://auth.atlassian.com/authorize?"+
 "audience=api.atlassian.com&" +
 `client_id=${CLIENT_ID}&` +
-"scope=read%3Ame&"+
+"scope=read%3Ajira-work%20read%3Ajira-user&"+
 `redirect_uri=${encodeURIComponent(REDIRECT_URI)}&` +
 // "redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&" +
 "state=burak&" +
 "response_type=code&" +
 "prompt=consent").then(console.log)
-
-
 
 // const jira_cloud_instance_name = ''
 // const CLIENT_ID = ''
