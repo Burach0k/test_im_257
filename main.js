@@ -4,13 +4,12 @@ const REDIRECT_URI = 'https://burach0k.github.io/test_im_257'
 fetch("https://auth.atlassian.com/authorize?"+
 "audience=api.atlassian.com&" +
 `client_id=${CLIENT_ID}&` +
-"scope=REQUESTED_SCOPE_ONE%20REQUESTED_SCOPE_TWO&"+
-`redirect_uri=${REDIRECT_URI}&` +
-"state=YOUR_USER_BOUND_VALUE&" +
+"scope=read%3Ame&"+
+`redirect_uri=${encodeURIComponent(REDIRECT_URI)}&` +
+// "redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&" +
+"state=burak&" +
 "response_type=code&" +
 "prompt=consent").then(console.log)
-
-
 
 
 
