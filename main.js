@@ -1,7 +1,9 @@
 const CLIENT_ID = 'Dd7OKj6A4QfnqzXWd07FEZjTbR7dhWf2'
 const REDIRECT_URI = 'https://burach0k.github.io/test_im_257'
 
-fetch("https://auth.atlassian.com/authorize?"+
+const a = document.getElementById('auth')
+
+a.src = "https://auth.atlassian.com/authorize?"+
 "audience=api.atlassian.com&" +
 `client_id=${CLIENT_ID}&` +
 "scope=read%3Ame%20read%3Aaccount&"+
@@ -9,7 +11,17 @@ fetch("https://auth.atlassian.com/authorize?"+
 // "redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&" +
 "state=burak&" +
 "response_type=code&" +
-"prompt=consent").then(console.log)
+"prompt=consent"
+
+// fetch("https://auth.atlassian.com/authorize?"+
+// "audience=api.atlassian.com&" +
+// `client_id=${CLIENT_ID}&` +
+// "scope=read%3Ame%20read%3Aaccount&"+
+// `redirect_uri=${encodeURIComponent(REDIRECT_URI)}&` +
+// // "redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback&" +
+// "state=burak&" +
+// "response_type=code&" +
+// "prompt=consent").then(console.log)
 
 // const jira_cloud_instance_name = ''
 // const CLIENT_ID = ''
