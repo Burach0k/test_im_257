@@ -1,5 +1,5 @@
 const CLIENT_ID = 'Dd7OKj6A4QfnqzXWd07FEZjTbR7dhWf2'
-const REDIRECT_URI = 'https://Burach0k.github.io/test_im_257'
+const REDIRECT_URI = 'https://burach0k.github.io/test_im_257'
 
 fetch("https://auth.atlassian.com/authorize?"+
 "audience=api.atlassian.com&" +
