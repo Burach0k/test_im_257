@@ -3,7 +3,7 @@ const REDIRECT_URI = 'https://burach0k.github.io/test_im_257'
 
 const a = document.getElementById('auth')
 
-a.src = "https://auth.atlassian.com/authorize?"+
+a.href = "https://auth.atlassian.com/authorize?"+
 "audience=api.atlassian.com&" +
 `client_id=${CLIENT_ID}&` +
 "scope=read%3Ame%20read%3Aaccount&"+
